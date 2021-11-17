@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Quicksand:wght@500&family=Roboto&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}
+
+.secondary-title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: aquamarine;
+    font-size: 200%;
+}
+
+.main-title {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Arvo', serif;
+    font-size: 500%
+}
+
+.description {
+    font-size: 150%;
+    color: #9affe1;
+    text-align: center;
+}
+
+a {
+  color: hotpink;
+}
+
+.icons {
+  color: var(--main-accent);
+  transition: 0.115s ease-in;
+}
+.icons:hover {
+  opacity: 70%;
+  transform: translateY(-6px);
+}
+
+.icon__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darker-bg);
+  padding: 20px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  font-size: 500%;
+  color: var(--main-accent);
+}
+
+.icon__item :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
