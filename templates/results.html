@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERB Song Rankings</title>
+</head>
+<body>
+    <h1>ERB Song Rankings</h1>
+    <table border="1">
+        <tr>
+            <th>Rank</th>
+            <th>Song Title</th>
+            <th>Win Percentage</th>
+        </tr>
+        {% for song in songs %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ song.title }}</td>
+            <td>{{ "%.2f" % song.win_percentage }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Vote Again</a>
+</body>
+</html>
