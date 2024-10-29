@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB Song Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+</head>
+<body>
+    <div id="vote-container">
+        <div class="button-container">
+            <button id="song1-btn" class="button button-song1"></button>
+        </div>
+        <div class="button-container">
+            <button id="song2-btn" class="button button-song2"></button>
+        </div>
+        <div class="footer-buttons">
+            <button id="skip-btn" class="footer-button">Skip</button>
+            <button id="results-btn" class="footer-button">View Results</button>
+        </div>
+    </div>
+
+    <div id="results-container" style="display:none;">
+        <h1>ERB Song Rankings</h1>
+        <table border="1">
+            <tr>
+                <th>Rank</th>
+                <th>Song Title</th>
+                <th>Win Percentage</th>
+            </tr>
+            <tbody id="results-table"></tbody>
+        </table>
+        <button id="back-btn">Vote Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
